@@ -47,7 +47,6 @@ Milestone_1/
 ├── Milestone1.ipynb
 ├── README.md
 ├── dataset_info.txt
-└── user_item_matrix_sample.csv (optional)
 
 ---
 
@@ -65,5 +64,6 @@ Online Retail Dataset – Kaggle
 https://www.kaggle.com/datasets/carrie1/ecommerce-data
 
 ---
+
 
 
