@@ -1,27 +1,17 @@
-# AI Enabled Recommendation Engine for an E-commerce Platform
+# Milestone 1 – Data Preparation
 
-## Project Overview
-This project focuses on building an AI-enabled recommendation engine for an e-commerce
-platform to provide personalized product recommendations based on user behavior.
+## Objective
+Prepare clean and structured datasets for model development.
 
-## Current Status
-Repository created for internship project submission.
-Project planning and milestone implementation will be carried out as per the given schedule.
+## Dataset
+Online Retail Dataset (Kaggle)
 
-## Milestones
-- Milestone 1: Data Preparation (Scheduled)
-  O Objective: Prepare clean, structured datasets for model development.
-  O Tasks: Collect user and product data; handle data inconsistencies; build the user-item interaction matrix.
+## Tasks Completed
+- Collected authentic public e-commerce dataset
+- Cleaned missing and inconsistent data
+- Built user-product interaction dataset
+- Created user-item interaction matrix
+- Identified highest purchased products
 
-  Evaluation Criteria
-  Milestone 1: Clean and structured datasets ready for training; user-item matrix created successfully.
-  
-- Milestone 2: 
-- Milestone 3: 
-- Milestone 4:
-
-## Technologies 
-- Python
-- Pandas, NumPy
-- Recommendation Algorithms
-
+## Outcome
+The dataset is clean, structured, and ready for training recommendation models.
