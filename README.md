@@ -36,7 +36,30 @@ Due to GitHub file size limitations, large dataset files are not uploaded. All r
 
 ---
 
-### 🔜 Milestone 2: 
+## ✅ Milestone 2: Model Building (Completed)
+
+**Objective:**  
+Develop and train the core recommendation model using the prepared data.
+
+**Approach Used:**  
+- User-based Collaborative Filtering  
+- Cosine Similarity for user similarity computation  
+
+**Tasks Performed:**
+- Loaded user–item interaction matrix from Milestone 1
+- Computed similarity between all users using cosine similarity
+- Implemented recommendation logic to generate personalized product suggestions
+- Tested the model by changing user IDs and observing different recommendations
+
+**Outputs:**
+- Trained recommendation model
+- Sample personalized recommendations for users
+
+**Note:**  
+The model is implemented using Jupyter Notebook inside VS Code. Large data files are excluded due to GitHub file size limitations.
+
+---
+
 ### 🔜 Milestone 3:
 ### 🔜 Milestone 4: 
 
@@ -45,17 +68,25 @@ Due to GitHub file size limitations, large dataset files are not uploaded. All r
 ## Repository Structure
 Milestone_1/
 ├── Milestone1.ipynb
-├── README.md
 ├── dataset_info.txt
+
+Milestone_2/
+├── Milestone2.ipynb
 
 ---
 
 ## Technologies Used
 - Python
-- Pandas
-- NumPy
+- VS Code  
+- Jupyter Notebook  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Collaborative Filtering  
+- Cosine Similarity  
+- GitHub  
+- Kaggle (Dataset Source)
 - Google Colab
-- Git & GitHub
 
 ---
 
@@ -64,6 +95,7 @@ Online Retail Dataset – Kaggle
 https://www.kaggle.com/datasets/carrie1/ecommerce-data
 
 ---
+
 
 
 
