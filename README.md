@@ -9,6 +9,7 @@ This project focuses on building an AI-enabled recommendation engine for an e-co
 ✔ Repository initialized  
 ✔ Milestone 1 completed  
 ✔ Milestone 2 completed  
+✔ Milestone 3 completed  
 🔄 Upcoming milestones will be implemented as per the project schedule
 
 ---
@@ -60,8 +61,36 @@ Develop and train the core recommendation model using the prepared data.
 The model is implemented using Jupyter Notebook inside VS Code. Large data files are excluded due to GitHub file size limitations.
 
 ---
+## ✅ Milestone 3: Evaluation and Refinement (Completed)
 
-### 🔜 Milestone 3:
+**Objective:**  
+Evaluate the recommendation model performance and refine the algorithm to improve accuracy.
+
+**Tasks Performed:**
+- Split the interaction dataset into training and testing sets
+- Re-trained the recommendation model using training data
+- Evaluated model performance using ranking-based metrics:
+  - Precision
+  - Recall
+  - F1-score
+- Tested the model under different recommendation scenarios
+- Refined the model by tuning parameters such as:
+  - Number of similar users considered
+  - Number of recommended items
+
+**Evaluation Metrics:**
+- **Precision:** Measures how many recommended products were relevant  
+- **Recall:** Measures how many relevant products were successfully recommended  
+- **F1-score:** Balances precision and recall  
+
+**Outputs:**
+- Evaluation results using precision, recall, and F1-score
+- Refined recommendation model with improved performance
+
+**Note:**  
+Traditional accuracy is not applicable to recommendation systems. Ranking-based metrics were used to validate model performance.
+
+---
 ### 🔜 Milestone 4: 
 
 ---
@@ -74,6 +103,9 @@ Milestone_1/
 Milestone_2/
 ├── Milestone2.ipynb
 
+Milestone_3/
+├── Milestone3.ipynb
+
 ---
 
 ## Technologies Used
@@ -84,7 +116,8 @@ Milestone_2/
 - NumPy  
 - Scikit-learn  
 - Collaborative Filtering  
-- Cosine Similarity  
+- Cosine Similarity
+- Evaluation Metrics (Precision, Recall, F1-score)
 - GitHub  
 - Kaggle (Dataset Source)
 - Google Colab
@@ -96,6 +129,7 @@ Online Retail Dataset – Kaggle
 https://www.kaggle.com/datasets/carrie1/ecommerce-data
 
 ---
+
 
 
 
