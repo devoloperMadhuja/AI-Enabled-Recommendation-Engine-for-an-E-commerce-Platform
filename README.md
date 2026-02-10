@@ -10,7 +10,7 @@ This project focuses on building an AI-enabled recommendation engine for an e-co
 ✔ Milestone 1 completed  
 ✔ Milestone 2 completed  
 ✔ Milestone 3 completed  
-🔄 Upcoming milestones will be implemented as per the project schedule
+✔ Milestone 4 completed 
 
 ---
 
@@ -153,6 +153,7 @@ Online Retail Dataset – Kaggle
 https://www.kaggle.com/datasets/carrie1/ecommerce-data
 
 ---
+
 
 
 
