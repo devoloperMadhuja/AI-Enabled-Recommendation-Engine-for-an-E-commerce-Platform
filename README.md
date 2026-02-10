@@ -91,7 +91,24 @@ Evaluate the recommendation model performance and refine the algorithm to improv
 Traditional accuracy is not applicable to recommendation systems. Ranking-based metrics were used to validate model performance.
 
 ---
-### 🔜 Milestone 4: 
+
+## ✅ Milestone 4: System Deployment (Completed)
+
+**Objective:**  
+Deploy the recommendation engine and integrate it with a user-facing interface.
+
+**Tasks Performed:**
+- Deployed the trained recommendation model using Flask
+- Integrated recommendation logic with a web-based interface
+- Implemented real-time user input for generating recommendations
+- Displayed personalized product recommendations dynamically
+- Applied a modern, dashboard-style UI for better user experience
+- Conducted functional testing to ensure system reliability
+
+**Outputs:**
+- Fully functional web-based recommendation system
+- Real-time personalized product suggestions
+- Deployed application running on local server
 
 ---
 
@@ -106,6 +123,12 @@ Milestone_2/
 Milestone_3/
 ├── Milestone3.ipynb
 
+Milestone_4/
+├── app.py
+├── templates/
+├── static/
+│ └── style.css
+
 ---
 
 ## Technologies Used
@@ -118,6 +141,7 @@ Milestone_3/
 - Collaborative Filtering  
 - Cosine Similarity
 - Evaluation Metrics (Precision, Recall, F1-score)
+- Flask  
 - GitHub  
 - Kaggle (Dataset Source)
 - Google Colab
@@ -129,6 +153,7 @@ Online Retail Dataset – Kaggle
 https://www.kaggle.com/datasets/carrie1/ecommerce-data
 
 ---
+
 
 
 
