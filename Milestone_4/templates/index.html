@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Recommendation Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="header">
+    <h1>AI-Enabled Recommendation Engine</h1>
+    <p>Real-time Personalized Product Suggestions</p>
+</div>
+
+<div class="stats">
+    <div class="card">👤 Users<br><strong>{{ total_users }}</strong></div>
+    <div class="card">📦 Products<br><strong>{{ total_products }}</strong></div>
+    <div class="card">⭐ Top 10 Products</div>
+</div>
+
+<div class="container">
+
+    <div class="left">
+        <h2>Get Recommendations</h2>
+        <form method="POST">
+            <input type="number" name="user_id" placeholder="Enter User ID" required>
+            <button type="submit">Recommend</button>
+        </form>
+
+        {% if user_id %}
+        <h3>Recommendations for User {{ user_id }}</h3>
+
+        {% if recommendations %}
+            {% for p in recommendations %}
+                <div class="product">
+                    <strong>{{ p[1] }}</strong><br>
+                    Product ID: {{ p[0] }}<br>
+                    Score: {{ p[2] }}
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No recommendations found.</p>
+        {% endif %}
+        {% endif %}
+    </div>
+
+    <div class="right">
+        <h2>Top 10 Most Purchased Products</h2>
+
+        {% for t in top_products %}
+            <div class="top-product">
+                {{ t[1] }}<br>
+                <small>Product ID: {{ t[0] }} | Qty: {{ t[2] }}</small>
+            </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+</body>
+</html>
