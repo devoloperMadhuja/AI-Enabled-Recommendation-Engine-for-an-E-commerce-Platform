@@ -115,7 +115,7 @@ Deploy the recommendation engine and integrate it with a user-facing interface.
 ## 📸 System Deployment Preview
 
 ### Personalized Recommendations
-![Recommendations Output](images/recommendations.png)
+![Recommendations Output](images/recommendations.jpeg)
 
 ---
 
@@ -160,6 +160,7 @@ Online Retail Dataset – Kaggle
 https://www.kaggle.com/datasets/carrie1/ecommerce-data
 
 ---
+
 
 
 
