@@ -112,6 +112,13 @@ Deploy the recommendation engine and integrate it with a user-facing interface.
 
 ---
 
+## 📸 System Deployment Preview
+
+### Personalized Recommendations
+![Recommendations Output](images/recommendations.png)
+
+---
+
 ## Repository Structure
 Milestone_1/
 ├── Milestone1.ipynb
@@ -153,6 +160,7 @@ Online Retail Dataset – Kaggle
 https://www.kaggle.com/datasets/carrie1/ecommerce-data
 
 ---
+
 
 
 
