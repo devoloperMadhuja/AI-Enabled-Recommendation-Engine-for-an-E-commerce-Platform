@@ -28,10 +28,10 @@ The system generates personalized product recommendations using:
 
 ## 🚀 2. Project Status
 Milestone	Status
-Milestone 1 – Data Preparation	✅ Completed
-Milestone 2 – Model Building	✅ Completed
-Milestone 3 – Evaluation & Refinement	✅ Completed
-Milestone 4 – System Deployment	✅ Completed
+# Milestone 1 – Data Preparation	✅ Completed
+# Milestone 2 – Model Building	✅ Completed
+# Milestone 3 – Evaluation & Refinement✅ Completed
+# Milestone 4 – System Deployment	✅ Completed
 
 ---
 ---
@@ -285,3 +285,4 @@ The system is suitable for modern e-commerce applications and can be extended in
 
 Madhuja Deb Adhikari
 AI-Enabled Recommendation Engine Project
+
