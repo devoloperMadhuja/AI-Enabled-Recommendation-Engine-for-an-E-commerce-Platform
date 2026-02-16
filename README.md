@@ -27,31 +27,31 @@ The system generates personalized product recommendations using:
 ---
 
 ## 🚀 2. Project Status
-# Milestone	Status
- Milestone 1 – Data Preparation	✅ Completed
- Milestone 2 – Model Building	✅ Completed
- Milestone 3 – Evaluation & Refinement✅ Completed
- Milestone 4 – System Deployment	✅ Completed
+ Milestone	Status
+# Milestone 1 – Data Preparation	✅ Completed
+# Milestone 2 – Model Building	✅ Completed
+# Milestone 3 – Evaluation & Refinement✅ Completed
+# Milestone 4 – System Deployment	✅ Completed
 
 ---
 ---
 ## 🏗️ 3. System Architecture
-- User Input (Login / Product Search)
+User Input (Login / Product Search)
             ↓
-- Streamlit Web Application
+ Streamlit Web Application
             ↓
-- Recommendation Engine
+ Recommendation Engine
      ↙                 ↘
-- Collaborative      Content-Based
+ Collaborative      Content-Based
 Filtering          Filtering (TF-IDF)
      ↓                 ↓
-- Cosine Similarity Ranking
+ Cosine Similarity Ranking
             ↓
-- Top-N Product Recommendations
+ Top-N Product Recommendations
             ↓
-- Dynamic Image Generation (API)
+ Dynamic Image Generation (API)
             ↓
-- Final Output to User
+ Final Output to User
 
 ---
 
