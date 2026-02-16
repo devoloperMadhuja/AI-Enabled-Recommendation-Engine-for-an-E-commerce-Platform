@@ -1,172 +1,312 @@
-# AI Enabled Recommendation Engine for an E-commerce Platform
+🛍️ AI-Enabled Recommendation Engine for an E-Commerce Platform
+📖 Project Overview
 
-## Project Overview
-This project focuses on building an AI-enabled recommendation engine for an e-commerce platform to provide personalized product recommendations based on user behavior and interaction patterns. The system aims to enhance user experience and improve product discovery using data-driven techniques.
+This project presents the design and implementation of an AI-powered recommendation engine for an e-commerce platform. The system generates personalized product recommendations based on user purchase behavior and product content similarity.
 
----
+The primary goal is to enhance user experience, improve product discovery, and increase engagement using data-driven machine learning techniques.
 
-## Project Status
-✔ Repository initialized  
-✔ Milestone 1 completed  
-✔ Milestone 2 completed  
-✔ Milestone 3 completed  
-✔ Milestone 4 completed 
+The system follows a Hybrid Recommendation Approach, combining:
 
----
+User-Based Collaborative Filtering
 
-## Milestones
+Content-Based Filtering using TF-IDF
 
-### ✅ Milestone 1: Data Preparation (Completed)
-**Objective:**  
-Prepare clean, structured datasets suitable for training recommendation models.
+Cosine Similarity for ranking
 
-**Tasks Performed:**
-- Collected an authentic public e-commerce dataset from Kaggle (Online Retail Dataset)
-- Selected relevant user and product attributes
-- Handled data inconsistencies such as missing values and negative quantities
-- Created a user–product interaction dataset based on purchase quantity
-- Constructed a user–item interaction matrix
-- Identified top purchased products for basic analysis
+🚀 Project Status
 
-**Outputs:**
-- Cleaned interaction dataset
-- User–item interaction matrix
-- Jupyter Notebook demonstrating the full data preparation pipeline
+✔ Repository Initialized
+✔ Milestone 1: Data Preparation – Completed
+✔ Milestone 2: Model Building – Completed
+✔ Milestone 3: Evaluation & Refinement – Completed
+✔ Milestone 4: System Deployment – Completed
 
-**Note:**  
-Due to GitHub file size limitations, large dataset files are not uploaded. All results can be reproduced by running the provided notebook.
+🏗️ System Architecture
+User Input (Search / Login)
+        ↓
+Streamlit Web Interface
+        ↓
+Recommendation Engine
+        ↓
+User-Based Similarity (Cosine Similarity)
+        ↓
+Content-Based Similarity (TF-IDF)
+        ↓
+Ranking & Filtering
+        ↓
+Recommended Products with Images
 
----
+📌 Milestone Breakdown
+✅ Milestone 1: Data Preparation
+🎯 Objective
 
-## ✅ Milestone 2: Model Building (Completed)
+Prepare clean, structured datasets suitable for building recommendation models.
 
-**Objective:**  
-Develop and train the core recommendation model using the prepared data.
+📊 Dataset Used
 
-**Approach Used:**  
-- User-based Collaborative Filtering  
-- Cosine Similarity for user similarity computation  
-
-**Tasks Performed:**
-- Loaded user–item interaction matrix from Milestone 1
-- Computed similarity between all users using cosine similarity
-- Implemented recommendation logic to generate personalized product suggestions
-- Tested the model by changing user IDs and observing different recommendations
-
-**Outputs:**
-- Trained recommendation model
-- Sample personalized recommendations for users
-
-**Note:**  
-The model is implemented using Jupyter Notebook inside VS Code. Large data files are excluded due to GitHub file size limitations.
-
----
-## ✅ Milestone 3: Evaluation and Refinement (Completed)
-
-**Objective:**  
-Evaluate the recommendation model performance and refine the algorithm to improve accuracy.
-
-**Tasks Performed:**
-- Split the interaction dataset into training and testing sets
-- Re-trained the recommendation model using training data
-- Evaluated model performance using ranking-based metrics:
-  - Precision
-  - Recall
-  - F1-score
-- Tested the model under different recommendation scenarios
-- Refined the model by tuning parameters such as:
-  - Number of similar users considered
-  - Number of recommended items
-
-**Evaluation Metrics:**
-- **Precision:** Measures how many recommended products were relevant  
-- **Recall:** Measures how many relevant products were successfully recommended  
-- **F1-score:** Balances precision and recall  
-
-**Outputs:**
-- Evaluation results using precision, recall, and F1-score
-- Refined recommendation model with improved performance
-
-**Note:**  
-Traditional accuracy is not applicable to recommendation systems. Ranking-based metrics were used to validate model performance.
-
----
-
-## ✅ Milestone 4: System Deployment (Completed)
-
-**Objective:**  
-Deploy the recommendation engine and integrate it with a user-facing interface.
-
-**Tasks Performed:**
-- Deployed the trained recommendation model using Flask
-- Integrated recommendation logic with a web-based interface
-- Implemented real-time user input for generating recommendations
-- Displayed personalized product recommendations dynamically
-- Applied a modern, dashboard-style UI for better user experience
-- Conducted functional testing to ensure system reliability
-
-**Outputs:**
-- Fully functional web-based recommendation system
-- Real-time personalized product suggestions
-- Deployed application running on local server
-
----
-
-## 📸 System Deployment Preview
-
-### Personalized Recommendations
-![Recommendations Output](images/recommendations.jpeg)
-
----
-
-## Repository Structure
-Milestone_1/
-├── Milestone1.ipynb
-├── dataset_info.txt
-
-Milestone_2/
-├── Milestone2.ipynb
-
-Milestone_3/
-├── Milestone3.ipynb
-
-Milestone_4/
-├── app.py
-├── templates/
-├── static/
-│ └── style.css
-
----
-
-## Technologies Used
-- Python
-- VS Code  
-- Jupyter Notebook  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Collaborative Filtering  
-- Cosine Similarity
-- Evaluation Metrics (Precision, Recall, F1-score)
-- Flask  
-- GitHub  
-- Kaggle (Dataset Source)
-- Google Colab
-
----
-
-## Dataset Source
-Online Retail Dataset – Kaggle  
+Online Retail Dataset – Kaggle
 https://www.kaggle.com/datasets/carrie1/ecommerce-data
 
----
+🔧 Tasks Performed
 
+Loaded raw e-commerce dataset
 
+Selected relevant attributes (User ID, Product ID, Quantity, Description)
 
+Removed missing values
 
+Removed negative quantities (returns/refunds)
 
+Constructed User–Item Interaction Matrix
 
+Generated product lookup table
 
+Performed exploratory analysis on top-selling products
 
+📦 Outputs
 
+Cleaned interaction dataset
 
+User–Item Interaction Matrix
+
+Product lookup dataset
+
+Jupyter Notebook for reproducibility
+
+✅ Milestone 2: Model Building
+🎯 Objective
+
+Develop the core recommendation model.
+
+🧠 Approach Used
+
+User-Based Collaborative Filtering
+
+🔧 Tasks Performed
+
+Loaded User–Item Matrix
+
+Computed User Similarity using Cosine Similarity
+
+Identified Top Similar Users
+
+Generated Personalized Product Recommendations
+
+Tested model with multiple user IDs
+
+📦 Outputs
+
+User similarity matrix
+
+Personalized recommendation engine
+
+Sample outputs demonstrating different user recommendations
+
+✅ Milestone 3: Evaluation & Refinement
+🎯 Objective
+
+Evaluate recommendation performance and improve model quality.
+
+🔧 Tasks Performed
+
+Split dataset into training and testing sets
+
+Re-trained recommendation model
+
+Evaluated performance using ranking-based metrics
+
+📊 Evaluation Metrics Used
+
+Precision – Proportion of recommended products that are relevant
+
+Recall – Proportion of relevant products successfully recommended
+
+F1-Score – Harmonic mean of precision and recall
+
+Note: Traditional accuracy metrics are not suitable for recommendation systems. Ranking-based evaluation metrics were used instead.
+
+🔄 Refinements Made
+
+Tuned number of similar users
+
+Adjusted number of recommended products
+
+Optimized similarity ranking
+
+📦 Outputs
+
+Evaluation results (Precision, Recall, F1-score)
+
+Improved and refined recommendation model
+
+✅ Milestone 4: System Deployment
+🎯 Objective
+
+Deploy the recommendation engine with a user-facing web interface.
+
+🖥️ Deployment Framework
+
+Streamlit (Python-based web application framework)
+
+🔧 Features Implemented
+
+Secure Login & Sign-Up system
+
+Session management
+
+Real-time product search
+
+Personalized recommendations
+
+TF-IDF based content similarity
+
+Dynamic product image generation using Pexels API
+
+Interactive dashboard metrics
+
+Modern UI with responsive layout
+
+📦 Outputs
+
+Fully functional web-based recommendation system
+
+Real-time recommendation generation
+
+Local server deployment
+
+🔥 Recommendation Strategy
+
+This system uses a Hybrid Recommendation Model:
+
+1️⃣ Collaborative Filtering
+
+Uses user purchase behavior
+
+Computes similarity between users
+
+Recommends products purchased by similar users
+
+2️⃣ Content-Based Filtering
+
+Uses product descriptions
+
+Applies TF-IDF vectorization
+
+Computes product similarity using cosine similarity
+
+Enables keyword-based product search
+
+This hybrid approach improves both personalization and relevance.
+
+📊 Business Impact
+
+The recommendation engine can:
+
+Improve user engagement
+
+Increase product discoverability
+
+Enhance customer experience
+
+Increase conversion rate
+
+Boost average order value
+
+Reduce search friction
+
+Improve customer retention
+
+🗂️ Repository Structure
+Milestone_1/
+│ ├── Milestone1.ipynb
+│ ├── user_item_matrix.csv
+│ └── product_lookup.csv
+
+Milestone_2/
+│ ├── Milestone2.ipynb
+│ └── user_similarity.pkl
+
+Milestone_3/
+│ └── Milestone3.ipynb
+
+Milestone_4/
+│ ├── app.py
+│ ├── users.csv
+│ ├── templates/
+│ └── static/
+
+README.md
+requirements.txt
+
+🛠️ Technologies Used
+
+Python
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+TF-IDF Vectorizer
+
+Cosine Similarity
+
+Collaborative Filtering
+
+Streamlit
+
+Jupyter Notebook
+
+VS Code
+
+GitHub
+
+Kaggle Dataset
+
+Pexels API (for dynamic product images)
+
+📈 Key Highlights
+
+✔ Hybrid Recommendation System
+✔ Real-world Dataset
+✔ Machine Learning Implementation
+✔ Ranking-based Evaluation
+✔ Dynamic Image Integration
+✔ Secure Login System
+✔ Real-Time Search-Based Recommendation
+✔ Deployment-Ready Application
+
+🔮 Future Enhancements
+
+Deep Learning-based Recommendation (Neural Collaborative Filtering)
+
+Real-time database integration (MySQL / MongoDB)
+
+Cloud deployment (AWS / Azure / GCP)
+
+Cold-start problem handling
+
+Rating prediction model
+
+Reinforcement learning-based personalization
+
+Performance optimization for large-scale datasets
+
+📸 System Preview
+
+📚 Dataset Source
+
+Online Retail Dataset – Kaggle
+https://www.kaggle.com/datasets/carrie1/ecommerce-data
+
+🎓 Conclusion
+
+This project demonstrates the end-to-end development of an AI-enabled recommendation engine using both collaborative and content-based filtering techniques. The system successfully integrates machine learning algorithms with a real-time web interface to deliver personalized product recommendations.
+
+The hybrid model ensures improved relevance, personalization, and scalability, making it suitable for modern e-commerce applications.
+
+📬 Author
+
+Madhuja Deb Adhikari
+AI-Enabled Recommendation Engine Project
