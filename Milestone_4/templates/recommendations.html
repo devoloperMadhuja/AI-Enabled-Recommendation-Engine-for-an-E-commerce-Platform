@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="sidebar">
+    <h3>Navigation</h3>
+    <a href="{{ url_for('dashboard') }}">Dashboard</a>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</div>
+
+<div class="main-content">
+    <h1>Recommended For You</h1>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+    <div class="products">
+        {% for item in recommendations %}
+        <div class="product-card">
+            <img src="{{ item.image_url }}">
+            <h3>{{ item.description }}</h3>
+            <p>Product ID: {{ item.product_id }}</p>
+            <p>Score: {{ item.score }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+</body>
+</html>

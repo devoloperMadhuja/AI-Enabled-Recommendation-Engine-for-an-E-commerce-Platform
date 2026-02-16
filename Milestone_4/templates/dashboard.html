@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="sidebar">
+    <h3>Navigation</h3>
+    <a href="{{ url_for('dashboard') }}">Dashboard</a>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</div>
+
+<div class="main-content">
+    <h1>Amazon Product Recommendation System</h1>
+
+    <div class="stats">
+        <div class="card">Total Users <h2>{{ total_users }}</h2></div>
+        <div class="card">Total Products <h2>{{ total_products }}</h2></div>
+        <div class="card">Total Transactions <h2>{{ total_transactions }}</h2></div>
+    </div>
+
+    <div class="recommend-box">
+        <form method="POST" action="/recommend">
+            <input type="number" name="user_id" placeholder="Enter User ID" required>
+            <button type="submit">Generate Recommendations</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
