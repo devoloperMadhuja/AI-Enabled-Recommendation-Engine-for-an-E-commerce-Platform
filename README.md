@@ -90,8 +90,6 @@ Prepare a **clean and structured dataset** suitable for building the recommendat
 
 The dataset was successfully cleaned and transformed into a **structured interaction matrix used for training the recommendation system**.
 
-![Milestone1 Output](images/milestone1_output.png)
-
 ---
 
 ## ✅ Milestone 2 – Model Building
@@ -114,8 +112,6 @@ Develop the **core recommendation model** capable of generating personalized pro
 ### Output
 
 The model successfully generated **product recommendations based on user similarity**.
-
-![Milestone2 Output](images/milestone2_output.png)
 
 ---
 
@@ -141,8 +137,6 @@ Evaluate the recommendation model and improve its performance.
 ### Output
 
 Evaluation confirmed that the model provides **relevant recommendations**.
-
-![Milestone3 Output](images/milestone3_output.png)
 
 ---
 
@@ -265,3 +259,4 @@ requirements.txt
 
 **Madhuja Deb Adhikari**  
 AI-Enabled Recommendation Engine Project
+
