@@ -164,7 +164,6 @@ Deploy the recommendation engine with a **user-friendly web interface**.
 
 A **fully functional AI-powered recommendation system** capable of generating product suggestions in real time.
 
-![System Output](images/milestone4_output.png)
 
 ---
 
@@ -259,4 +258,5 @@ requirements.txt
 
 **Madhuja Deb Adhikari**  
 AI-Enabled Recommendation Engine Project
+
 
